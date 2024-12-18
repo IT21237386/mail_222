@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 
 
 const Mailbox = () => {
-  
+
   const [sidebarVisible, setSidebarVisible] = useState(false);
   const [formData, setFormData] = useState({
     to: "",
@@ -42,19 +42,29 @@ const Mailbox = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    const emailData = {
+      to: formData.to,
+      subject: formData.subject,
+      message: formData.message,
+      // attachment: formData.attachment? formData.attachment : null,
+    };
 
-    const formData = new FormData(); // Prepare data for form submission
-    formData.append('to', formData.to);
-    formData.append('subject', formData.subject);
-    formData.append('message', formData.message);
-    if (formData.attachment) {
-        formData.append('attachment', formData.attachment);
-    }
+    // const formData = new FormData(); // Prepare data for form submission
+    // formData.append('to', emailData.to);
+    // formData.append('subject', emailData.subject);
+    // formData.append('message', emailData.message);
+    // if (formData.attachment) {
+    //     formData.append('attachment', formData.attachment);
+    // }
 
     try {
-        const response = await fetch('http://localhost:8800/send-email', {
+        const response = await fetch('http://localhost:8800/emailService/send-email', {
             method: 'POST',
-            body: formData,
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(emailData), 
         });
 
         if (response.ok) {
