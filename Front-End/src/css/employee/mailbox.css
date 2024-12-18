@@ -1,4 +1,4 @@
-.mailbox-container-km {
+.mailbox-container {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
@@ -9,7 +9,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
  
-    .profile-breadcrumb-km {
+    .profile-breadcrumb {
         font-size: 16px;
         font-weight: 600;
         margin-top: 45px;
@@ -29,7 +29,7 @@
     color: #24757E;
     font-weight: bold;
   }
-  .mailbox-input-km {
+  .mailbox-input {
     width: 100%;
      background: #d7d7d7;
     padding: 10px;
@@ -38,7 +38,7 @@
     border-radius: 4px;
   }
   
-  .input-label-km {
+  .input-label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
@@ -53,7 +53,7 @@
     border-radius: 4px;
   }
   
-  .mailbox-submit-btn-km {
+  .mailbox-submit-btn {
     display: inline-block;
     background-color: #24757E;
     color: white;
