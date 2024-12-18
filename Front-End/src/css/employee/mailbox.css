@@ -1,0 +1,75 @@
+.mailbox-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background:#e7e7e7;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+ 
+    .profile-breadcrumb {
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 45px;
+        margin-right: 0;
+        margin-left: -20px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+  
+  
+  
+  h2 {
+    font-size: 20px;
+    text-align: center;
+    margin: 55px 0;
+    color: #24757E;
+    font-weight: bold;
+  }
+  .mailbox-input {
+    width: 100%;
+     background: #d7d7d7;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .input-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  textarea {
+      background: #d7d7d7;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .mailbox-submit-btn {
+    display: inline-block;
+    background-color: #24757E;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    white-space: nowrap;
+    border-radius: 4px;
+   
+  }
+  
+  .mailbox-submit-btn:hover {
+    background-color: #0056b3;
+  }
+  .profile-breadcrumb .contact{
+      color: #24757E;
+  }
