@@ -18,14 +18,8 @@ const Sidebar = () => {
         <li><a href="#clients"><img src={employee} alt="Attendance" style={{ width: '25px', marginRight: '10px',boxShadow: 'none' }}/><span>Employers</span></a></li>
         <li><a href="#payment"><img src={payment} alt="Attendance" style={{ width: '25px', marginRight: '10px' }}/><span>Payment</span></a></li>
         <li><a href="#task"><img src={task} alt="Attendance" style={{ width: '25px', marginRight: '10px' }}/><span>Task</span></a></li>
-        {/* <li><a href="/mailbox"><img src={mail} alt="Attendance" style={{ width: '25px', marginRight: '10px' }}/><span>Mail-Box</span></a></li> */}
+        <li><a href="/mailbox"><img src={mail} alt="Attendance" style={{ width: '25px', marginRight: '10px' }}/><span>Mail-Box</span></a></li>
       
-        <li>
-          <Link to="/mailbox">
-            <img src={mail} alt="Mail" style={{ width: "25px", marginRight: "10px" }} />
-            <span>Mail-Box</span>
-          </Link>
-        </li>
       
       </ul>
     </div>
